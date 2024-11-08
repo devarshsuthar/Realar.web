@@ -1,0 +1,82 @@
+@media only screen and (max-width:600px) {
+
+    .navbar{
+        min-height: 100px;
+    }
+    .navbar-toggler{
+        color: white !important;
+    }
+    .navbar-toggler img:hover{
+        border: none!important;
+    }
+    .head-first{
+        font-size: 42px !important;
+        text-align: center;
+        align-items: center ;
+        font-weight: bold;
+    }
+    .left-text p{
+        font-size: 17px !important;
+        width: 85% !important;
+        text-align:center;
+        font-weight:normal;
+    }
+    .carousel-inner{
+        border-radius: 20px;
+    }
+    .left-text{
+        min-height: 420px;
+    }
+    .right-text{
+        min-height: 200px;
+    }
+    .second-cd-1{
+        min-height: 150px;
+    }
+    .second-section{
+        min-height: 400px !important;
+    }
+    .fourth-p p{
+        font-size: 27px !important;
+        text-align: center;
+        padding: 20px 0px;
+    }
+    .number-eight {
+        height: 150px !important;
+    }
+    .onen-text{
+        font-size: 16px !important;
+    }
+    .onen {
+        height: 110px !important;
+    }
+    .number-ninth {
+        height: 150px !important;
+    }
+    .text-tenth {
+        font-size: 45px !important;
+        height: 110px !important;
+    }
+    .text-tenth h1{
+        font-size: 45px !important;
+    }
+    .container {
+        border: none !important;
+    }
+    .number-tenth {
+        height: 150px !important;
+    }
+    .number-eleven {
+        height: 150px !important;
+    }
+    .text-eleven {
+        height: 105px !important;
+    }
+    .text-eleven h1 {
+        font-size: 43px !important;
+    }
+    
+
+ 
+  
+}
