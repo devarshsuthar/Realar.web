@@ -14,12 +14,18 @@
 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
-    <title>Document</title>
+    <title>Realar</title>
+    <link rel="icon" type="image/x-icon" href="r.png">
 
 </head>
 
-<body>
+<body style="position: relative;">
 
+    <div class="splash-screen">
+        <span class="loader">REALAR</span>
+    </div>
+
+     
     <div class="first-section container-fluid p-0 ">
 
         <nav class="navbar navbar-expand-lg bg-body-tertiary ">
@@ -46,12 +52,12 @@
                     <ul class="navbar-nav d-flex align-items-start p-md-0 p-5 mb-2 mb-lg-0 ">
 
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            <a class="nav-link dropdown-toggle" href="#Home" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
                                 Home
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#Home">Action</a></li>
                                 <li><a class="dropdown-item" href="#">Another action</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
@@ -61,72 +67,61 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link " aria-current="page" href="#">About</a>
+                            <a class="nav-link " aria-current="page" href="#About">About</a>
                         </li>
 
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            <a class="nav-link dropdown-toggle" href="#Properties" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
                                 Properties
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <li><a class="dropdown-item" href="#Properties">Properties</a></li>
+                                <li><a class="dropdown-item" href="#">Property Details</a></li>
+                                
+                                
                             </ul>
                         </li>
 
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            <a class="nav-link dropdown-toggle" href="#Agencies" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
                                 Agencies
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <li><a class="dropdown-item" href="#Agencies">Agencies</a></li>
+                                <li><a class="dropdown-item" href="#"> Agencies Details</a></li>
+                               
                             </ul>
                         </li>
 
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
+                            <a class="nav-link dropdown-toggle"  role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false" href="#Pages" >
                                 Pages
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <li><a class="dropdown-item" href="#Pages">Agent Page</a></li>
+                                <li><a class="dropdown-item" href="#"> Agent Details</a></li>
+                                <li><a class="dropdown-item" href="#"> Pricing Page</a></li>
+                                <li><a class="dropdown-item" href="#"> Shop Page</a></li>
+                                <li><a class="dropdown-item" href="#"> Error Page</a></li>                
+                               
                             </ul>
                         </li>
 
 
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Blog
-                            </a>
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link dropdown-toggle" href="#Blog" role="button" data-bs-toggle="dropdown" aria-expanded="false">Blog</a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <li><a class="dropdown-item" href="#Blog">Blog Page</a></li>
+                                <li><a class="dropdown-item" href="#">Blog Details</a></li>
+            
                             </ul>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link " aria-current="page" href="#">Contact Us</a>
+                            <a class="nav-link " aria-current="page" href="#Contact Us">Contact Us</a>
                         </li>
 
                     </ul>
@@ -149,9 +144,9 @@
 
         </nav>
 
-        <div style="background-color:  #202c34;" class="carousel-min container-fluid  p-md-0 p-3 ">
+        <div style="background-color:  #202c34;" class="carousel-min container-fluid  p-md-0 p-3  " id="Home">
 
-            <div id="carouselExampleFade" class="carousel slide carousel-fade " data-bs-ride="carousel">
+            <div id="carouselExampleFade"  class="carousel slide carousel-fade " data-bs-ride="carousel" >
                 <div class="carousel-inner">
                     <div class="carousel-item active mainheight d-flex flex-column flex-md-row  position-relative"
                         data-bs-interval="2000" style="background: url(about_1_1.jpg); background-size: cover;">
@@ -320,7 +315,7 @@
         </div>
     </div>
 
-    <div class="third-section container-fluid ">
+    <div class="third-section container-fluid " id="About">
         <div class="container">
 
             <div class="row">
@@ -403,7 +398,7 @@
         </div>
     </div>
 
-    <div class="six-section container-fluid mainheight ">
+    <div class="six-section container-fluid mainheight " id="Properties">
         <div class="container">
             <div class="row">
                 <div class="six d-flex flex-column flex-md-row  mainheight">
@@ -459,7 +454,7 @@
     </div>
 
     <!--  -->
-    <div class="container-fluid" style="min-height: 550px; background-color: #202c34; ">
+    <div class="container-fluid pt-3 pt-md-0" style="min-height: 550px; background-color: #202c34; ">
         <div class="container" style="min-height: 550px; border-bottom: 1px solid rgba(128, 128, 128, 0.534);">
             <div class="row" style="min-height: 550px;">
                 <div class="left-eight gap-2 p-md-1 p-2 d-flex align-items-center justify-content-center flex-md-row flex-column col-md-6"
@@ -703,7 +698,7 @@
     </div>
 
     <!-- eleventh-con -->
-    <div class="container-fluid" style="background-color: #202c34; min-height: 500px;">
+    <div class="container-fluid pb-md-0 pb-3" style="background-color: #202c34; min-height: 500px;">
         <div class="container" style="min-height: 500px; border-bottom: 1px solid rgba(128, 128, 128, 0.534);">
             <div class="row" style="min-height: 500px;">
                 <div class="left-eleven col-md-7 d-flex align-items-center justify-content-center flex-md-row flex-column"
@@ -917,7 +912,7 @@
 
 
 
-    <div class="container-fluid mainheight fourthteen-con">
+    <div class="container-fluid mainheight fourthteen-con" id="Agencies">
         <div class="container mainheight">
             <div class="text-foruthteen row" style="min-height: 200px;">
                 <div class="left-text-fourthteen col-md-7 d-flex align-items-start justify-content-center flex-column"
@@ -1081,7 +1076,7 @@
 
     <!-- sixthteen-con -->
 
-    <div class="container-fluid sixthteen-con" style="background-color: #c8ccd4; min-height: 600px; overflow: hidden;">
+    <div class="container-fluid sixthteen-con" style="background-color: #c8ccd4; min-height: 600px; overflow: hidden;" id="Pages">
         <div class="container " style="min-height: 600px;">
             <div class="row " style="min-height: 600px;">
                 <div class="left-sixthteen col-md-6" data-aos="fade-right" data-aos-offset="200" data-aos-delay="50"
@@ -1225,7 +1220,7 @@
 
     <!-- eighthteen-con -->
 
-    <div class="container-fluid eighthteen-con" style="min-height: 600px; overflow: hidden;">
+    <div class="container-fluid eighthteen-con" style="min-height: 600px; overflow: hidden;" id="Blog">
         <div class="container" style="min-height: 600px;">
             <div class="text-eighthteen p-2 col-12 d-flex align-items-md-center align-items-start justify-content-md-between flex-md-row flex-column"
                 style="min-height: 150px;" data-aos="fade-down" data-aos-offset="200" data-aos-delay="50"
@@ -1305,8 +1300,8 @@
 
     <!-- twenthteen-con -->
 
-    <div class="container-fluid mainheight p-3 twenthteen-con" style="overflow: hidden;">
-        <div class="container mainheight" style="background-color: #7c8290; border-radius: 30px;">
+    <div class="container-fluid mainheight p-3 twenthteen-con" style="overflow: hidden;" id="Contact Us">
+        <div class="twenthteen container mainheight" style="background-color: #7c8290; border-radius: 30px;">
             <div class="row mainheight p-3">
 
                 <div class="left-20 col-md-4 d-flex align-items-start justify-content-center flex-column gap-3"
@@ -1400,8 +1395,7 @@
                 <div class="right-2-20 col-md-2 pt-3 d-flex align-items-start justify-content-center flex-column"
                     style="min-height: 500px;" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50"
                     data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false">
-                    <h3 style="font-family: Arial, Helvetica, sans-serif; padding-left: 14px; font-weight: 600;">Useful
-                        Link</h3>
+                    <h3 style="font-family: Arial, Helvetica, sans-serif; padding-left: 14px; font-weight: 600;">Explore</h3>
                     <ul class="d-flex align-items-start justify-content-start flex-column col-12 pt-4 gap-4"
                         style="min-height: 300px; margin-left: -20px;">
                         <li class="col-12 cc"><i class="bi bi-chevron-right cc"></i><a class="col-12" href="">All

@@ -1,6 +1,5 @@
 *{padding: 0;margin: 0;box-sizing: border-box;}
 body {
-
     background-color: #202c34;
 }
 .br{border: 4px solid red;}
@@ -8,7 +7,85 @@ body {
 .bg{border: 4px solid green;}
 .bk{border: 4px solid black;}
 .bv{border: 4px solid blueviolet;}
+.html{
+    scroll-behavior: smooth;
+}
+/* From Uiverse.io by Shoh2008 */ 
+.splash-screen{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    /* position: absolute; */
+    z-index: 111;
+    background-color:#202c34;
+    display: flex;
+    opacity: 0;
+    /* display: none; */
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    animation-name: splash;
+    transform: translateY(-1000px);
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+}
 
+
+
+@keyframes splash{
+    0%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    95%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    96%{
+        opacity: 0;
+    }
+    100%{
+        
+        transform: translateY(-1000px);
+    }
+}
+
+.loader {
+    font-size:90px;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #FFF;
+    letter-spacing: 2px;
+    position: relative;
+    box-sizing: border-box;
+  }
+  
+  .loader::after {
+    content: 'REALAR';
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #263238;
+    text-shadow: 0 0 2px #FFF, 0 0 1px #FFF, 0 0 1px #FFF;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    animation: animloader 6s linear infinite;
+  }
+  
+  @keyframes animloader {
+    0% {
+      height: 100%;
+    }
+  
+    100% {
+      height: 0%;
+    }
+  }
 .fisrt-section{
     min-height: 100vh;
 }
@@ -18,6 +95,7 @@ body {
     flex-direction: column;
     background-color: #202c34 !important;
     gap: 4px;
+    width: 100%;
 }
 .navbar-nav{
     width: 90%;
@@ -308,6 +386,13 @@ body {
 }
 
 /* seventh */
+.image-eight {
+    transition: .8s linear;
+}
+.image-eight:hover{
+    transform:scale(0.9) !important;
+    transition: .8s linear;
+}
 .admin-circle {
     width: 60px;
     height: 60px;
